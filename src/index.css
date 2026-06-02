@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+@theme {
+  --font-sans: "Quicksand", system-ui, sans-serif;
+  
+  --color-pastel-pink: #FFECF2;
+  --color-pastel-blue: #E3F2FD;
+  --color-pastel-green: #E8F5E9;
+  --color-pastel-yellow: #FFF9C4;
+  --color-kawaii-pink: #FF85A1;
+  --color-kawaii-blue: #64B5F6;
+  --color-kawaii-green: #81C784;
+}
+
+/* Custom glassy panel utilities to exactly match the theme's aesthetic */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  box-shadow: 0 8px 32px rgba(255, 133, 161, 0.1);
+}
+
+/* Kawaii buttons matching the spec style */
+.kawaii-btn {
+  background: var(--color-kawaii-pink);
+  color: white;
+  border-radius: 12px;
+  padding: 8px 16px;
+  font-weight: 700;
+  transition: transform 0.1s, background-color 0.1s;
+  cursor: pointer;
+  border: none;
+}
+
+.kawaii-btn:hover {
+  transform: scale(1.02);
+  background-color: #ff6b8e;
+}
+
+.kawaii-btn-secondary {
+  background: var(--color-pastel-blue);
+  color: #1e88e5;
+  border: 2px solid var(--color-kawaii-blue);
+  border-radius: 12px;
+  padding: 8px 16px;
+  font-weight: 700;
+  transition: transform 0.1s;
+}
+
+.kawaii-btn-secondary:hover {
+  transform: scale(1.02);
+}
+
+.input-soft {
+  border: 2px solid var(--color-pastel-pink);
+  border-radius: 12px;
+  padding: 8px;
+  outline: none;
+  background: white;
+  font-family: 'Quicksand', sans-serif;
+  transition: border-color 0.2s;
+}
+
+.input-soft:focus {
+  border-color: var(--color-kawaii-pink);
+}
+
+.stat-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+}

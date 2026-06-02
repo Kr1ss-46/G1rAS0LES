@@ -1,0 +1,8 @@
+{
+  "name": "Evaluador Integral de Alumnos",
+  "description": "Herramienta interactiva para que docentes de educación básica evalúen de manera integral (cuantitativa y cualitativa) las calificaciones, asistencias y perfiles de aprendizaje de sus alumnos, con analíticas avanzadas, recomendaciones pedagógicas con IA y conexión automatizada a Google Sheets para reportajes mensuales.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
